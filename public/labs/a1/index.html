@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>
+            Assignment 1
+        </title>
+    </head>
+    <body>
+        <h1> Assignment 1 - All About HTML</h1>
+        <h2> Headings </h2>
+        <h2> Paragraphs </h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iusto. Ab sequi perspiciatis distinctio quas, odio molestias ipsum quae quasi aut tempora delectus totam iusto rerum ratione eligendi dolores perferendis!
+        </p>
+
+        <input/"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, repellendus nulla odit
+         <br> 
+         quisquam ullam odio nisi dolor veniam sit ducimus praesentium qui maiores earum rerum optio similique consequuntur deleniti eum!
+
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur unde debitis fugit eum, culpa est earum accusamus ullam odit fugiat voluptates accusantium non, consectetur cum magni, quis quibusdam. Vero, nesciunt!
+
+        </p>
+        <h2> Lists </h2>
+        <ol>
+            <li> Dune</li>
+            <li> Lord of the Rings.</li>
+        </ol>
+
+        <ul>
+            <li style="font-size: 2rem; color: red";>Red</li>
+            <li>Green</li>
+            <li>Blue</li>
+        </ul>
+        <h2> Tables </h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th> Movie</th>
+                    <th> Year</th>
+                    <th> Rating </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td> Dune</td>
+                <td> 2021</td>
+                <td rowspan="2"> PG-13</td>
+                </tr>
+                <tr>
+                <td colspan="2"> Lord of the Rings</td>
+                
+                
+                </tr>
+                <tr>
+                    <td> Harry Potter</td>
+                    <td> 2001</td>
+                    <td rowspan="2"> PG</td>
+                </tr>
+                <tr>
+                    <td> Star Wars </td>
+                    <td> 1977</td>
+                </tr>
+
+                
+            </tbody>
+        </table>
+
+        <h2> Images</h2>
+
+        <img width="400px" src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg" />
+        
+        <h2> Forms </h2>
+        <form action="">
+            Username
+            <input 
+            name="Username"
+            type="text" 
+            title="Please enter your username" 
+            placeholder="apple321"
+            value="pre-populate">
+            <!-- readonly -->
+            <br>
+            <label for="password">
+                Password:
+                <input name="password" id="password" type="Password"/>
+            </label>
+            Salary: 
+            <input name="salary" type="number">
+            Date: 
+            <input name="date" min="2024-01-05" value="2024-01-12" max= "2024-01-25" type="date">
+            <br>
+            Buttons: <button type="button"> Click Me</button>
+            <button type="reset"> Clear Form</button>
+            <button> Edit Profile</button>
+
+            <h3> Radio Buttons</h3>
+            Favorite Books: <br>
+                <input type="radio" id="dune" name="fav-book" value="Dune">
+                <label for="dune"> Dune </label>
+                 <br>
+                 <input type="radio" checked name="fav-book" value="LOTR"/> Lord of the Rings
+                 <div> <input type="radio" name="fav-book" value="HP"> Harry Potter </div>
+                 <div> <input type="radio" name="fav-book" value="SW"> Star Wars</div>
+
+            Favorite Fruit:
+            <select name="favorite-fruit" id="">
+                <option value="apple"> Apple</option>
+                <option value="Pear"> Pear</option>
+            </select>
+            <h3> Favorite Genre</h3>
+            <input type="checkbox" name="fav-genre"> Action
+            <input type="checkbox" name="fav-genre"> Comedy
+            <input type="checkbox" name="fav-genre"> Horror
+            <input type="checkbox" name="fav-genre"> Drama
+
+            <h3>Biography</h3>
+
+            <textarea name="biography" id="" cols="30" rows="10">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, illum vitae dolore aperiam saepe est? Autem quisquam pariatur ea eaque qui porro nam delectus, expedita, voluptas rerum soluta voluptatem sint!
+            </textarea>
+            
+             
+            
+        </form>
+
+    </body>
+</html>
