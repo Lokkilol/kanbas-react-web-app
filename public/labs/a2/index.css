@@ -1,0 +1,41 @@
+/* p {
+    display: block;
+    font-size: 1.5rem;
+    color: blue;
+    background-color: yellow;
+} */
+
+
+p#par-1{
+    font-size: 2rem;
+    color: red;
+    background-color: blue;
+}
+
+.wd-selector-1 .wd-selector-2 {
+    background-color: blue;
+    color: white;
+}
+
+.wd-selector-2 > .wd-selector-3 {
+    color:orange;
+}
+
+.wd-dimension-portrait {
+    position: relative;
+    top: 10px;
+    width:75px;
+    height:100px;
+    background-color: yellow;
+}
+.wd-dimension-landscape {
+    width: 100px;
+    height: 75px;
+    background-color: red;
+}
+
+.wd-dimension-square {
+    width: 75px;
+    height: 75px;
+    background-color: blue;
+}
