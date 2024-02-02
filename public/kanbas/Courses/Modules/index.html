@@ -1,27 +1,76 @@
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="./index.css">
+    </head>
     <body>
-        <button> Collapse All </button>
-        <button> View Progress </button>
-        <select name="" id="">
-            <option> Publish All </option>
-            <option> Publish Modules Only </option>
-        </select>
-        <button> Module </button>
-                <ul>
-                    <li> Week 1
-                        <ul>
-                            <li>Learning Objectives
-                            <li>Introduction to the course</li>
-                            <li>Learn what is Web Development</li>
-                        </ul>
-                    </li>
-                    <li> Week 2
-                        <ul>
-                            <li>Learning Objectives</li>
-                        </ul>
-                    </li>
-                </ul>
+        <div class="flex-grow-1"> <button class="btn btn-primary"> Collapse All </button>
+            <button class="btn btn-danger"> View Progress </button>
+            <select name="" id="">
+                <option> Publish All </option>
+                <option> Publish Modules Only </option>
+            </select>
+            <button> Module </button>
+            <ul class="list-group wd-modules m-2">
+                <li class="list-group-item">
+                    <div> Week 0
+                        <span class="float-end">
+                            <button class="btn btn-primary"> Ok </button>
+                            <button class="btn btn-primary"> + </button>
+                            <button class="btn btn-danger"> X </button>
+                        </span>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">LEARNING OBJECTIVES
+                            
+                        <li class="list-group-item" style="padding-left: 5px;">Introduction to the course</li>
+                        <li class="list-group-item">Learn what is Web Development</li>
+                        <li class="list-group-item"> Creating a development environment</li>
+                        <li class="list-group-item"> Creating a Web Application</li>
+                        <li class="list-group-item"> Getting started with the 1st assignment</li>
+                        <li class="list-group-item"> READING </li>
+                        
+                        <li class="list-group-item"> Full Stack Developer - Chapter 1 - Introduction </li>
+                        <li class="list-group-item"> Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
+                        </li>
+                        
+                        <li class="list-group-item"> SLIDES </li>
+                        
+                        <li class="list-group-item"> <a href="#"> Introduction to Web Development Links to an external
+                                site.</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#"> Creating an HTTP server with Node.js Links to an external site. </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href=""> Creating a React Application Links to an external site. </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li class="list-group"> 
+                    <div> Week 1 - HTML
+                        <span class="float-end">
+                            <button class="btn btn-primary"> Ok </button>
+                            <button class="btn btn-primary"> + </button>
+                            <button class="btn btn-danger"> X </button>
+                        </span>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">LEARNING OBJECTIVES</li>
+
+                        <li class="list-group-item"> Learn how to create user interfaces with HTML</li>
+                        <li class="list-group-item"> Keep working on assignment 1 </li>
+                        <li class="list-group-item"> Deploy the assignment to Netlify </li>
+
+                        <li class="list-group-item"> READING </li>
+                        <li class="list-group-item"> Full Stack Developer - Chapter 1 - Introduction </li>
+                        <li class="list-group-item"> Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML </li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
     </body>
 </html>
