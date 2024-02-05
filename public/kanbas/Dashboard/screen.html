@@ -3,13 +3,18 @@
         <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="/Kanbas/styles.css" />
         <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/libs/font-awesome-4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="d-flex">
             <div> 
                 <ul class="wd-kanbas-navigation">
                     <li>
-                        <a href="/Kanbas/Account/Profile/screen.html">
+                        <a href="/Kanbas/Dashboard/screen.html"> <img src="/Kanbas/Navigation/images/neu.png" class="neu-image"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Account/Profile/screen.html"> <i class="fa fa-user-circle-o" aria-hidden="true"></i></i>
                             Account
                         </a>
                     </li>
@@ -17,84 +22,137 @@
                         <a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                        <a href="/Kanbas/Courses/Home/screen.html"> <i class="fa fa-book" aria-hidden="true"></i> Courses</a>
                     </li>
+                
                     <li>
                         <a href="/Kanbas/Calendar/index.html"> <i class="fa fa-calendar"> </i> Calendar</a>
                     </li>
-                    <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="/Kanbas/Inbox/index.html"> <i class="fa fa-inbox" aria-hidden="true"></i> <br>Inbox</a></li>
+                    <li>
+                        <a href="#"> <i class="fa fa-history" aria-hidden="true"></i> History</a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-television" aria-hidden="true"></i></i> Studio</a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-history" aria-hidden="true"></i> Commons</a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-question-circle" aria-hidden="true"></i>
+                            <br>Help</a>
+                    </li>
+                
+                    <li class="bottom-arrow">
+                        <a href="#"> <i class="fa fa-arrows-h" aria-hidden="true"></i></i>
+                        </a>
+                    </li>
+                
+                
                 </ul>
             </div>
         
             <div class="p-4">
                 <h1>Dashboard</h1>
                 <hr />
-                <h2>Published Courses (12)</h2>
+                <h4>Published Courses (7)</h4>
                 <hr />
                 <div class="row">
                     <div class="row row-cols-1 row-cols-md-5 g-4">
                         <div class="col" style="width: 300px">
                             <div class="card">
-                                <img src="images/react.png" card-img-top" style="max-height: 150px" />
+                                <img src="images/react.png" card-img-top" style="height: 150px;" />
                                 <div class="card-body">
                                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                                         style="text-decoration: none; color: navy; font-weight: bold">
                                         CS1234 React JS</a>
-                                    <p class="card-text">Full Stack software developer</p>
-                                    <a html="#" class="btn btn-primary"> Go </a>
+                                    <p class="card-text">Spring 2024</p>
+                                    <a href="/Kanbas/Courses/Home/screen.html" class="btn btn-primary"> Go </a>
                                 </div>
                             </div>
             
                         </div>
                         <div class="col" style="width: 300px">
                             <div class="card">
-                                <img src="images/react.png" card-img-top" style="max-height: 150px" />
+                                <img src="images/networks.jpeg" card-img-top" style="height: 150px;" />
                                 <div class="card-body">
                                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                                         style="text-decoration: none; color: navy; font-weight: bold">
-                                        CS1234 React JS</a>
-                                    <p class="card-text">Full Stack software developer</p>
-                                    <a html="#" class="btn btn-primary"> Go </a>
+                                        CS4700 Networks</a>
+                                    <p class="card-text">Spring 2024</p>
+                                    <a href="/Kanbas/Courses/Home/screen.html" class="btn btn-primary"> Go </a>
                                 </div>
                             </div>
             
                         </div>
                         <div class="col" style="width: 300px">
                             <div class="card">
-                                <img src="images/react.png" card-img-top" style="max-height: 150px" />
+                                <img src="images/web-dev.png" card-img-top" style="height: 150px;" />
                                 <div class="card-body">
                                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                                         style="text-decoration: none; color: navy; font-weight: bold">
-                                        CS1234 React JS</a>
-                                    <p class="card-text">Full Stack software developer</p>
-                                    <a html="#" class="btn btn-primary"> Go </a>
+                                        CS4550 Web Development</a>
+                                    <p class="card-text">Spring 2024</p>
+                                    <a href="/Kanbas/Courses/Home/screen.html" class="btn btn-primary"> Go </a>
                                 </div>
                             </div>
             
                         </div>
                         <div class="col" style="width: 300px">
                             <div class="card">
-                                <img src="images/react.png" card-img-top" style="max-height: 150px" />
+                                <img src="images/logic.png" card-img-top" style="height: 150px;" />
                                 <div class="card-body">
                                     <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
                                         style="text-decoration: none; color: navy; font-weight: bold">
-                                        CS1234 React JS</a>
+                                        CS2800 Logic and Computation</a>
                                     <p class="card-text">Full Stack software developer</p>
-                                    <a html="#" class="btn btn-primary"> Go </a>
+                                    <a href="/Kanbas/Courses/Home/screen.html" class="btn btn-primary"> Go </a>
                                 </div>
                             </div>
             
                         </div>
-                        <div class="col" style="width: 300px"> ... </div>
-                        <div class="col" style="width: 300px"> ... </div>
+                        <div class="col" style="width: 300px;">
+                            <div class="card">
+                                <img src="images/racket-logo.svg" card-img-top" style="max-height: 150px;" />
+                                <div class="card-body">
+                                    <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                                        style="text-decoration: none; color: navy; font-weight: bold">
+                                        CS4400 Programming Languages</a>
+                                    <p class="card-text">Spring 2024</p>
+                                    <a href="/Kanbas/Courses/Home/screen.html" class="btn btn-primary"> Go </a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col" style="width: 300px">
+                            <div class="card">
+                                <img src="images/co-op.png" card-img-top" style="height: 150px;" />
+                                <div class="card-body">
+                                    <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                                        style="text-decoration: none; color: navy; font-weight: bold">
+                                        COOP3945 Co-op Work Experience</a>
+                                    <p class="card-text">Fall 2023</p>
+                                    <a href="/Kanbas/Courses/Home/screen.html" class="btn btn-primary"> Go </a>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col" style="width: 300px">
+                            <div class="card">
+                                <img src="images/plants.jpeg" card-img-top" style="height: 150px;" />
+                                <div class="card-body">
+                                    <a class="card-title" href="/Kanbas/Courses/Home/screen.html"
+                                        style="text-decoration: none; color: navy; font-weight: bold">
+                                        CS9700 Theory of Life</a>
+                                    <p class="card-text">Fall 2093</p>
+                                    <a href="/Kanbas/Courses/Home/screen.html" class="btn btn-primary"> Go </a>
+                                </div>
+                            </div>
+                        
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </body>
 </html>
