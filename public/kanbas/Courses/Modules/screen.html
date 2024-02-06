@@ -11,12 +11,128 @@
 
 <body>
     <div class="d-block d-md-none">
-        <nav class="navbar navbar-dark bg-dark text-light"> Nav Bar</nav>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="hover-main-nav">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="wd-kanbas-navigation-2">
+                <ul class="wd-kanbas-navigation-1">
+                    <li>
+                        <a href="/Kanbas/Dashboard/screen.html"> <img src="/Kanbas/Navigation/images/neu.png"
+                                class="neu-image"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Account/Profile/screen.html"> <i class="fa fa-user-circle-o"
+                                aria-hidden="true"></i></i>
+                            Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"></i> Dashboard</a>
+                    </li>
+                    <li class="wd-active">
+                        <a href="/Kanbas/Courses/Home/screen.html"> <i class="fa fa-book" aria-hidden="true"></i>
+                            Courses</a>
+                    </li>
 
+                    <li>
+                        <a href="/Kanbas/Calendar/index.html"> <i class="fa fa-calendar"> </i> Calendar</a>
+                    </li>
+                    <li><a href="/Kanbas/Inbox/index.html"> <i class="fa fa-inbox" aria-hidden="true"></i> <br>Inbox</a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-history" aria-hidden="true"></i> History</a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-television" aria-hidden="true"></i></i> Studio</a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-history" aria-hidden="true"></i> Commons</a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fa fa-question-circle" aria-hidden="true"></i>
+                            <br>Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hover-expand-nav">
+                <h1> + </h1>
+            </div>
+
+            <div class="hidden-menu">
+                <li class="wd-active">
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Modules/screen.html">
+                        Modules
+                    </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Piazza/index.html">
+                        Piazza
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> Zoom Meetings </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/screen.html">
+                        Assignments
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> Quizzes </a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Grades/screen.html">
+                        Grades
+                    </a>
+                </li>
+                <li>
+                    <a href="#"> People </a>
+                </li>
+                <li>
+                    <a href="#"> Panopto Video </a>
+                </li>
+                <li>
+                    <a href="#"> Discussions </a>
+                </li>
+                <li>
+                    <a href="#"> Announcements </a>
+                </li>
+                <li>
+                    <a href="#"> Pages </a>
+                </li>
+                <li>
+                    <a href="#"> Files </a>
+                </li>
+                <li>
+                    <a href="#"> Rubrics </a>
+                </li>
+                <li>
+                    <a href="#"> Outcomes </a>
+                </li>
+                <li>
+                    <a href="#"> Collaborations </a>
+                </li>
+                <li>
+                    <a href="#"> Syllabus </a>
+                </li>
+                <li>
+                    <a href="#"> Settings </a>
+                </li>
+            </div>
+
+        </nav>
     </div>
+
     <div class="d-flex">
         <div>
-            <ul class="wd-kanbas-navigation">
+            <ul class="d-none d-md-block wd-kanbas-navigation">
                 <li>
                     <a href="/Kanbas/Dashboard/screen.html"> <img src="/Kanbas/Navigation/images/neu.png"
                             class="neu-image"></i>
@@ -65,12 +181,12 @@
         </div>
         <div class="d-none d-md-block">
             <ul class="wd-navigation">
-                <li>
+                <li class="wd-active">
                     <a href="/Kanbas/Courses/Home/screen.html">
                         Home
                     </a>
                 </li>
-                <li class="wd-active">
+                <li>
                     <a href="/Kanbas/Courses/Modules/screen.html">
                         Modules
                     </a>
@@ -133,20 +249,30 @@
 
 
         </div>
-        <div class="flex-grow-1"> <button class="btn btn-primary"> Collapse All </button>
-            <button class="btn btn-danger"> View Progress </button>
-            <select name="" id="">
-                <option> Publish All </option>
-                <option> Publish Modules Only </option>
-            </select>
-            <button> Module </button>
+        <div class="flex-grow-1">
+            <div class="d-none d-md-block">
+                <h3 style="margin-top: 25px; color:red"> CS4550</h3>
+                <hr>
+            </div>
+            <div>
+                <button class="btn" style="background-color:  lightgray;"> Collapse All </button>
+                <button class="btn" style="background-color:  lightgray;"> View Progress </button>
+                <select name="" id="" class="btn" style="background-color:  lightgray;">
+                    <option> Publish All </option>
+                    <option> Publish Modules Only </option>
+                </select>
+                <button class="btn btn-danger"> +Module </button>
+            </div>
+
+
             <ul class="list-group wd-modules m-2">
+
                 <li class="list-group-item">
                     <div> Week 0
                         <span class="float-end">
-                            <button class="btn btn-primary"> Ok </button>
-                            <button class="btn btn-primary"> + </button>
-                            <button class="btn btn-danger"> X </button>
+                            <button class="btn"><i class="fa fa-check-circle text-success"></i> </button>
+                            <button class="btn"> <i class="fa fa-plus ms-2"></i> </button>
+                            <button class="btn"> <i class="fa fa-ellipsis-v ms-2"></i> </button>
                         </span>
                     </div>
                     <ul class="list-group">
@@ -181,9 +307,9 @@
                 <li class="list-group">
                     <div> Week 1 - HTML
                         <span class="float-end">
-                            <button class="btn btn-primary"> Ok </button>
-                            <button class="btn btn-primary"> + </button>
-                            <button class="btn btn-danger"> X </button>
+                            <button class="btn"><i class="fa fa-check-circle text-success"></i> </button>
+                            <button class="btn"> <i class="fa fa-plus ms-2"></i> </button>
+                            <button class="btn"> <i class="fa fa-ellipsis-v ms-2"></i> </button>
                         </span>
                     </div>
                     <ul class="list-group">
