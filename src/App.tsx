@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Labs from './Labs';
 import HelloWorld from './hello';
+import Assignment3 from './Labs/a3';
 
 function App() {
   return (
@@ -24,8 +25,10 @@ function App() {
     // </div>
     <>
       <Labs/>
+      <Assignment3/>
       <h1> Kanbas </h1>
       <HelloWorld/>
+
 
     </>
   );
