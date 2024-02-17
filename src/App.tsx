@@ -3,7 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import Labs from './Labs';
 import HelloWorld from './hello';
-import Assignment3 from './Labs/a3';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Kanbas from './Kanbas';
+import './bootstrap.min.css'
+
+    
+
 
 function App() {
   return (
@@ -24,12 +29,21 @@ function App() {
     //   </header>
     // </div>
     <>
-      <Labs/>
-      <Assignment3/>
-      <h1> Kanbas </h1>
-      <HelloWorld/>
-
-
+    {/* <h1> Hello World </h1> */}
+    {/* <h2> Links to other pages </h2>
+    <ol>
+      <li> <a href="/#/Labs"> Labs </a> </li> 
+      <li> <a href="/#/Kanbas"> Kanbas </a></li>
+      <li> <a href="/#/hello"> Hello World!</a></li>
+    </ol> */}
+      <HashRouter>
+          <Routes>
+            {/* <Route path="/"         element={<Navigate to="/Labs"/>}/> */}
+            <Route path="/Labs/*"   element={<Labs/>}/>
+            <Route path="/Kanbas/*" element={<Kanbas/>}/>
+            <Route path="/hello"    element={<HelloWorld/>}/>
+          </Routes>
+      </HashRouter>  
     </>
   );
 }
