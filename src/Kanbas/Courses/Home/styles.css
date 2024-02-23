@@ -1,0 +1,38 @@
+.content {
+    width: 95%;
+}
+
+.home {
+    width: 100%;
+}
+
+.status {
+
+}
+button {
+    color: rgb(3, 87, 232);
+
+}
+
+.status-list > button {
+    color: rgb(3, 87, 232);
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.status-list > ul > li {
+    color: rgb(3, 87, 232);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .status {
+        float: right;
+    }
+    .home {
+        float: left;
+        width: 60%;
+    }
+}

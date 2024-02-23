@@ -1,9 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 import "./index.css";
+import neu from "./neu.png"
 import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt, FaTv, FaRegQuestionCircle, FaClock, FaInbox, FaPeopleArrows, FaRegArrowAltCircleRight } from "react-icons/fa";
 function KanbasNavigation() {
   const links = [
-    { label: "Account",   icon: <FaRegUserCircle className="fs-1" />  },
+    { label: "Account",   icon: <FaRegUserCircle className="fs-2" />  },
     { label: "Dashboard", icon: <FaTachometerAlt className="fs-2" />  },
     { label: "Courses",   icon: <FaBook className="fs-2" />           },
     { label: "Groups",   icon: <FaPeopleArrows className="fs-2" />           },
@@ -17,9 +18,16 @@ function KanbasNavigation() {
   const { pathname } = useLocation();
   return (
     <ul className="wd-kanbas-navigation">
+        <Link to={"/Kanbas/#"}> 
+          <img src={neu} alt="" className="neu-image"/>
+        </Link>
       {links.map((link, index) => (
         <li key={index} className={pathname.includes(link.label) ? "wd-active" : ""}>
-          <Link to={`/Kanbas/${link.label}`}> {link.icon} {link.label} </Link>
+          {/* Conditional, if courses we just default to the first course */}
+          {link.label === "Courses" && 
+          <Link to={`/Kanbas/Courses/CS1234`}> {link.icon} {link.label} </Link>}
+          {link.label !== "Courses" && 
+          <Link to={`/Kanbas/${link.label}`}> {link.icon} {link.label} </Link>}
         </li>
       ))}
     </ul>
