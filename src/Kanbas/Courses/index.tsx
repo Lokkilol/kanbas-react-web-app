@@ -5,16 +5,23 @@ import CourseNavigation from "./Navigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
+import { useState } from "react";
+import "./styles.css"
 function Courses() {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
+  const [courseNav, setCourseNav] = useState(true)
   return (
     <div>
-      <h1>
-        <HiMiniBars3 /> 
-        Course {course?.name}</h1>
+      
+      <div className="title-div">
+        <HiMiniBars3 style={{cursor: 'pointer', marginRight: '10px'}} onClick={() =>setCourseNav(!courseNav)}/> 
+        {course?.name} 
+      </div>
+        
+        
     
-        <CourseNavigation />
+        {courseNav && <CourseNavigation />}
         <div>
             <div
                 className="overflow-y-scroll position-fixed bottom-0 end-0"
