@@ -30,3 +30,24 @@
 .wd-modules>li {
     margin-bottom: 20px;
 }
+
+
+
+.button-op {
+    margin-right: 5px;
+    color: white;
+    background-color: green;
+    border-radius: 10%;
+    font-size: 1.5rem;
+    margin-left: 5px;
+
+}
+
+.module-op-text {
+    margin-right: 10px;
+    border-radius: 12%;
+    background-color: white;
+    border: 1px solid gray !important;
+    
+
+}

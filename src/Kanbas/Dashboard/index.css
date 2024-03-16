@@ -1,0 +1,13 @@
+.button-div {
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-left: 5px;
+    font-size: 1.25rem;
+    border-radius: 12%;
+    border-color: black;
+    border-width: 3px;
+    background-color: green;
+    color: white
+}
