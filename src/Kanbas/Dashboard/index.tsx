@@ -35,25 +35,29 @@ function Dashboard() {
   return (
     <div className="p-4">
       <h1>Dashboard</h1>              <hr />
-      <h5>Add or Update Course</h5>
-      <input value={course.name} className="form-control"
-             onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
-      <input value={course.number} className="form-control"
-             onChange={(e) => setCourse({ ...course, number: e.target.value }) } />
-      <input value={course.startDate} className="form-control" type="date"
-             onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
-      <input value={course.endDate} className="form-control" type="date"
-             onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
-      <div className="button-div">
-        <button className="btn btn-primary" style={{backgroundColor:"green", borderColor:"green"}} onClick={addNewCourse} >
+      
+      <div className="add-update-div"> 
+        <h5>Add or Update Course</h5>
+        <input value={course.name} className="form-control"
+              onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
+        <input value={course.number} className="form-control"
+              onChange={(e) => setCourse({ ...course, number: e.target.value }) } />
+        <input value={course.startDate} className="form-control" type="date"
+              onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
+        <input value={course.endDate} className="form-control" type="date"
+              onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
+              <div className="button-div">
+        <button className="btn btn-primary" style={{backgroundColor:"green", borderColor:"green", marginRight: "10px"}} onClick={addNewCourse} >
 
           Add
         </button>
-        <button className="btn btn-primary" style={{backgroundColor:"green", borderColor:"green"}} onClick={updateCourse} >
+        <button className="btn btn-primary" style={{backgroundColor:"blue", borderColor:"blue"}} onClick={updateCourse} >
           Update
         </button>
       </div>
 
+      </div>
+      
 
       <h2>Published Courses ({lenOfCourses})</h2> <hr />
       <div className="row">
@@ -68,7 +72,7 @@ function Dashboard() {
                     style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>
                     {course.name} </Link>
                     <br />
-                    <button className="btn btn-primary" onClick={(event) => {
+                    <button className="btn btn-primary" style={{backgroundColor: "green", marginRight: "10px"}} onClick={(event) => {
                       event.preventDefault();
                       setCourse(course);
                     }}>

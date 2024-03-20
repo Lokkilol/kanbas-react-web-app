@@ -11,3 +11,9 @@
     background-color: green;
     color: white
 }
+
+.add-update-div {
+    margin-left: 10px;
+    width: 40%;
+    float: right;
+}
